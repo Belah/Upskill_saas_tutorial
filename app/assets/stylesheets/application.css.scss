@@ -17,10 +17,12 @@
  @import 'bootstrap-sprockets';
  @import 'bootstrap';
 
+// Typography font styles
 h1, h2, h3 {
   font-family: 'Open Sans', san-serif;
 }
 
+// Background gradient so pretty!
 .navbar, .home-callout {
   // Stole this gradient from uiGradients teehee~
   background: #1c92d2;  /* fallback for old browsers */
@@ -32,25 +34,18 @@ h1, h2, h3 {
   border: none;
 }
 
-.navbar-default .navbar-brand {
-  color: white;
-}
-
+// Navstyles colors and hover features!
+.navbar-default .navbar-brand,
 .navbar-default .navbar-nav li a {
   color: white;
+  &:hover {
+    color: white;
+    opacity: 0.75;
+  }
 }
 
-.navbar-default .navbar-brand:hover {
-  color: white;
-  opacity: 0.75;
-}
-
-.navbar-default .navbar-nav li a:hover {
-  color: white;
-  opacity: 0.75;
-}
-
-.home-callout{
+// Home page styles and colors!
+.home-callout {
   color: black;  
   margin-top: -20px;
   padding-top: 50px;
